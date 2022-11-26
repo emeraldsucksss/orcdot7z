@@ -1,0 +1,45 @@
+2006-2009 dont NEED a site, but could benefit from it. 2010M is patched the same, but might be buggy without one.
+
+Most of these are only one parters, so they will be shown as such.
+
+Trust Check: 
+string search "trust check failed for %s" and jmp it. There may be two, so do both.
+
+Player names and ids:
+string search "set a player's id" or "set a player's name", change the push 0x5 (or whatever the push below them is) to push 0x0
+
+extranet:
+string search "extranet" and jmp it
+
+
+
+SITE PATCH (only really needed for 2010):
+1. Search roblox.com
+2. Replace all of the roblox.com links shown. (using the same method as for the Public Key)
+3. Control + E to replace!
+(There is a check for how long the site name is, try to shoot for a 10 character name)
+4!!! READ ME!!!: Do appdata.xml AFTER you do site patch. dont do it before you patch! Or i wil kill you!
+
+IN THE CASE YOUR SITE IS OVER 10 CHARACTERS:
+
+Find the hex length of your site. For example, roblox.com is A, so if my site was roblox2.xyz, it'd be B
+Above most of the roblox.com things in the list, is a push then the site length. Change it to the length of your site.
+
+USING EXTREMELY LONG SITES:
+
+If your site is over 12 characters, it might be too long for normal methods to be used. You'll have to do some extra steps.
+
+1. Scroll down to the bottom of the dump, there should be plenty of free space down there.
+2. Type your site in. EXAMPLE: thissiteissocool.cf
+3. Right click on the first character (in my example its t) and copy the address.
+4. Go to the roblox.com, and double click it (not the comment, the push 0x?????)
+5. Change push 0x?????? to whatever address is in your clipboard.
+
+
+
+2010 fixes:
+
+GetScriptState.ashx is needed for 2010 to function. It is located in the asset folder on your website. Just create it, and use the web archive to find what it responds.
+
+Health Bar is not built in to the client anymore, you'll have to find the healthbar asset. You can also do this locally by putting the HealthScript RBXM into character.rbxm
+inside of the content folder

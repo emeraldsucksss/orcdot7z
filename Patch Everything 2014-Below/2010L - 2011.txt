@@ -1,0 +1,53 @@
+PLAYER NAMES AND IDS (2011 exclusive):
+
+1. Drag RobloxApp.exe into x32dbg
+2. Spam Run (until the window loads)
+3. File -> New
+4. Repeat Spam Run
+5. Go back into x32dbg, Symbols, click ONCE on the RobloxApp.exe bar, then on the right hand side type __CxxThrowException
+6. Right click that, and breakpoint it.
+7. Go back into the Roblox window, Click View -> Toolbars -> Command Bar
+
+8. Run this code below:
+game.Players:CreateLocalPlayer(0):LoadCharacter()
+
+9. Go into players, Click on your player, Then change the name or id. You'll have to repeat the above steps for the one you dont do.
+10. The game should hang. DO NOT SPAM RUN.
+11. Go back into x32dbg, go to the CPU tab, and look in the bottom right. There should be a highlighted area there. Double click it.
+12. jmp it.
+
+
+PUBLIC KEY:
+1. search BGIAA
+2. You have to generate a key through RBXSigTools. Its in the content folder.
+3. go to PublicKeyBlob.txt
+4. right click the very long string in CPU, hover over Follow In Dump, then click on the 0x????? Address.
+5. Make it the same as the one from PublicKeyBlob.txt
+
+
+SITE PATCH:
+1. Search roblox.com
+2. Replace all of the roblox.com links shown. (using the same method as for the Public Key)
+3. Control + E to replace!
+(There is a check for how long the site name is, try to shoot for a 10 character name)
+4!!! READ ME!!!: Do appdata.xml AFTER you do site patch. dont do it before you patch! Or i wil kill you!
+
+IN THE CASE YOUR SITE IS OVER 10 CHARACTERS:
+
+Find the hex length of your site. For example, roblox.com is A, so if my site was roblox2.xyz, it'd be B
+Above most of the roblox.com things in the list, is a push then the site length. Change it to the length of your site.
+
+USING EXTREMELY LONG SITES:
+
+If your site is over 12 characters, it might be too long for normal methods to be used. You'll have to do some extra steps.
+
+1. Scroll down to the bottom of the dump, there should be plenty of free space down there.
+2. Type your site in. EXAMPLE: thissiteissocool.cf
+3. Right click on the first character (in my example its t) and copy the address.
+4. Go to the roblox.com, and double click it (not the comment, the push 0x?????)
+5. Change push 0x?????? to whatever address is in your clipboard.
+
+there is no joinscripturl for early 2012 and below, you can use
+PLAYER.exe -script "dofile('http://yoursite.local/path/to/your/join.php?ip=127.0.0.1')" "C:\PATH\TO\MAP.rbxl" 
+
+the example "C:\PATH\TO\MAP.rbxl" is not really needed for joining, only when hosting.

@@ -1,0 +1,118 @@
+All you need is: x32dbg, a version of roblox from 2012 to 2014, corescripts, RBXSigTools, and basic php knowledge
+
+2010+ require websites.
+
+1. Launch x32dbg (not x64dbg) and drag RobloxPlayerBeta.exe into the window
+
+2. Go to Symbols, and double click RobloxPlayerBeta.exe there
+
+3. In the top right corner, there should be a small [Az] Icon. Click on it.
+
+This is the string search window. You don't have to do this multiple times, you can always go back to the References window.
+
+
+
+
+SITE PATCH:
+1. Search roblox.com
+2. Replace all of the roblox.com links shown. (using the same method as for the Public Key)
+3. Control + E to replace!
+(There is a check for how long the site name is, try to shoot for a 10 character name)
+4!!! READ ME!!!: Do appdata.xml AFTER you do site patch. dont do it before you patch! Or i wil kill you!
+
+IN THE CASE YOUR SITE IS OVER 10 CHARACTERS:
+
+Find the hex length of your site. For example, roblox.com is A, so if my site was roblox2.xyz, it'd be B
+Above most of the roblox.com things in the list, is a push then the site length. Change it to the length of your site.
+
+USING EXTREMELY LONG SITES:
+
+If your site is over 12 characters, it might be too long for normal methods to be used. You'll have to do some extra steps.
+
+1. Scroll down to the bottom of the dump, there should be plenty of free space down there.
+2. Type your site in. EXAMPLE: thissiteissocool.cf
+3. Right click on the first character (in my example its t) and copy the address.
+4. Go to the roblox.com, and double click it (not the comment, the push 0x?????)
+5. Change push 0x?????? to whatever address is in your clipboard.
+
+
+blocking %s PATCH:
+
+1. Search blocking %s
+
+2. double click it
+
+3. scroll up a bit, above a few jbs, then a je. change je to jmp
+
+
+
+
+analytics / game PATCH:
+
+1. Search analytics
+
+2. double click the string thats JUST analytics
+
+3. scroll up to find the game string (dont go away from CPU!)
+
+4. change the above jne to a jmp
+
+
+
+
+public key PATCH:
+
+1. search BGIAA
+
+2. You have to generate a key through RBXSigTools. Ask around for it!
+
+3. go to PublicKeyBlob.txt
+
+4. right click the very long string in CPU, and make it the same as the one from PublicKeyBlob.txt
+
+
+
+
+OPTIONAL: invalid request + invalid request 2-5:
+This is optional because it poses a security risk. If you are going to do this, it would fit in a launcher revival,
+or a small private one. Its basically 2014's trust check.
+
+1. search invalid request
+
+2. in every single one there is a jne or je above it, change it to jmp
+
+
+
+
+OPTIONAL: !isKeyboardAcquired
+This makes the windows key work while focused into the window.
+
+1. Search !isKeyboardAcquired
+
+2. Go to the top one (thats just !isKeyboardAcquired)
+
+3. Scroll down a bit, you will see a push 5 (seemingly in the middle of nowhere)
+
+4. Change it to push 6
+
+
+OPTIONAL (late 2013 / 2014) ReconstructAssetUrl:
+
+this is the same as the site patch but:
+Change all robloxlabs.com instances to roblox.com
+
+Create a folder named ClientSettings in the root directory of your roblox folder, and create a ClientAppSettings.json file in there. Inside of that, put this in there.
+{"FFlagReconstructAssetUrl": "true"}
+
+
+
+EXTRA INFO:
+
+2012 is very janky on how it handles hosting. make sure you use a official host script from the roblox website.
+
+launch args for 2012M-2014 are as follows
+
+PLAYER.exe -t 0 -a 0 -j "http://yoursite.local/path/to/your/join.php?ip=127.0.0.1"
+
+there is no joinscripturl for early 2012 and below, you can use
+PLAYER.exe -script "dofile('http://yoursite.local/path/to/your/join.php?ip=127.0.0.1')"
