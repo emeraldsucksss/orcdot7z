@@ -1,6 +1,6 @@
 # orc resources
 yeah  
-# Other ORC Resources  
+# some shit
 ## Site  
 ## Joinscripts  
 ## Client Patch Guides  
