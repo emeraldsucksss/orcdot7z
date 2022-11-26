@@ -14,4 +14,5 @@ yeah
 - [rblx-scripts](https://github.com/yoshi295295/rblx-scripts)  
 - [RCCService](https://github.com/com1/rccservice)  
 ## Client Patch Guides  
-here.  
+- the ones here  
+- [RCCService](https://github.com/com1/rccservice)  
