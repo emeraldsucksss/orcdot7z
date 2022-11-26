@@ -1,0 +1,6 @@
+less requests from Roblox to your site!!!!
+1. String search for /Error/Dmp.ashx
+2. Scroll a bit up until you find shit like jne and je
+3. jmp all of it, all of them.
+4. Done!!!
+Roblox will tell you you are on offline mode, but you can dismiss it, stuff will still load fine like join scripts and corgis

@@ -1,0 +1,12 @@
+Dinner table on god
+Https patch for MOST CLIENTS!!!
+
+1. string search mc
+2. find the string that only say mc
+3. double click one of them and find jne or je (if it doesn't show at the mc you double click go to the other one)
+4. jmp it
+5. go to the other one that doesn't have jne
+6. scroll up till you find robloxlabs.com (unless you patched robloxlabs to be your domain, then look for your domain)
+7. jmp on top of robloxlabs (or your domain)
+
+BOOM HTTPS PATCHED!!!

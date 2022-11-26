@@ -1,0 +1,11 @@
+FIRST DO: change roblox.com to your domain, do trust check, string search api.roblox.com/%s/?apikey=%s, change it to www.yourdomain.com/%s/?apikey=%s
+
+clist patch:
+1. string search sysstats
+2. double click "Players::onRemoteSysStats disconnect"
+3. jmp both jne and je, then change push 1 to push 0
+4. go back to the References tab
+5. double click "Players::onRemoteSysStats disconnect not in the clist"
+6. first jmp the je above it
+7. then jmp the jne above it
+8. change push 1 to push 0

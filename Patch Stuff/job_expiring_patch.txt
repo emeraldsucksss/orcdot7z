@@ -1,0 +1,5 @@
+1. string search for Closing JobItem
+2. double click on Closing JobItem %s
+3. do the changes shown in jmp1st.png
+4. scroll a bit up
+5. do the changes shown in jmp2nd.png

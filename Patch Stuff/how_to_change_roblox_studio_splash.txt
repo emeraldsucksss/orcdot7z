@@ -1,0 +1,18 @@
+1. open x32dbg
+2. open robloxstudiobeta
+3. right click -> search for -> all modules -> string references
+4. Patience
+5. search for "splash", you will see something like :/images/RobloxStudioSplash.png
+6. double click that
+7. right click that in CPU, follow in dump, robloxstudiobeta_(stuff)
+8. look at the dump window right below CPU, you will see the same :/images string
+9. drag click all over the string until the green dot, make sure you don't select the green dot
+10. press Ctrl+E
+11. click "Keep Size" in the bottom left corner
+12. now, assuming you have placed your splash in Content, change this to:
+Content/RobloxStudioSplash.png (it doesn't have to be named RobloxStudioSplash.png, but i would use .png and name it something similar)
+13. click "OK"
+14. press Ctrl+P
+15. click "Patch File"
+16. name it anything, make sure the file extension is *.exe
+17. if you have done it correctly, you'll see the new splash when launching.

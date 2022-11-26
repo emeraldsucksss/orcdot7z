@@ -1,0 +1,14 @@
+1) Open the file in resource hacker.
+2) Create a new resource with the following code:
+STRINGTABLE
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+{
+  13,     "inserttitlehere"
+}
+
+3) After you compile and save it, Load it properly in debugger.
+4) Right Click > Search for > Current Module > Command
+5) Paste `push 0x320` and hit OK
+6) After selecting one of the results, Find `push 65` (push 0x65) above it (if it's not there try another result)
+7) change it to `push 0xD`
+8) Done, enjoy new title bar

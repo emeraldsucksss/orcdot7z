@@ -1,0 +1,5 @@
+1. string search trust check failed
+2. click on one of the trust check failed for %s
+3. jmp jne and je
+4. click on the other trust check failed for %s
+5. jmp both jne and je

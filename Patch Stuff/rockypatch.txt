@@ -1,0 +1,16 @@
+YOUR MOTHER PATCHING 101
+ROBLOX IS EASY TO PATCH
+FOLLOW THE EASY INSTRUCTIONS BELOW
+AND VISIT MY SITE assume.neocities.org
+ROCKY PATCHING 101
+1. OPEN ROBLOX client on the x32dbg....
+2. string search for Running Script
+3. SELECT Running Script
+4. a bit below running script there should be something with JNE
+5. change JNE to JE
+6. Done....
+7. NOW String Search Failed to start network client on port
+8. now below Failed to start network client on port
+9. there is localhost
+10. now go ahead and change THE JE to JMP
+11. DONE ROCKY IS DONE GO ENJOY YOUR MOM 2011 NOW!!!

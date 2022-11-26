@@ -1,0 +1,4 @@
+1. string search for versioncompatibility
+2. double click it
+3. right click then search in dump
+4. select versioncompatibility in dump and make it all 00 in hex

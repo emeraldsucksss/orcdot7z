@@ -1,0 +1,12 @@
+HOWWWW TO CHANGEEEEE RATNET KEY!!!!
+1. open rccservice with x32dbg
+2. start a string search
+3. at the bottom, alongside the searchbar, you will see something saying regex
+4. click regex
+5. now search for
+^.[A-Qa-q0-9]{40}.$
+or
+^.[A-Za-z0-9]{40}.$
+----------------------------
+RCCService-0.285.0.49012: "1ro78912031q78334p81s417q586ss732s4qr2n4"
+RCCService-0.206.0.62042: "77on3909rpn6n323ro1274963ro43776rsn18488"

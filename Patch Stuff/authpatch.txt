@@ -1,0 +1,4 @@
+How to patch universes/validate-place-join (ID 146):
+1. string search for PlaceAuthenticationThread.
+2. then change JE to JMP.
+3. save changes and enjoy
