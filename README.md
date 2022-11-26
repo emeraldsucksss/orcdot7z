@@ -1,2 +1,6 @@
-# orcdot7z
-that one funny file
+# orc resources
+yeah  
+# Other ORC Resources  
+## Site  
+## Joinscripts  
+## Client Patch Guides  
