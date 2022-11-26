@@ -16,3 +16,5 @@ yeah
 ## Client Patch Guides  
 - the ones here  
 - [RCCService](https://github.com/com1/rccservice)  
+## BEWARNED USING THE GUIDES HERE ON LARGESCALE REVIVALS !
+![ye](https://img.guildedcdn.com/ContentMediaGenericFiles/605e46c83e78c18513f80e28d08d7c09-Full.webp?w=399&h=242)
